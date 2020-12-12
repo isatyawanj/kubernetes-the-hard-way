@@ -40,11 +40,6 @@ This does the below:
   This is required for kubernetes networking to function correctly.
     > sysctl net.bridge.bridge-nf-call-iptables=1
 
-> if you get => `sysctl: cannot stat /proc/sys/net/bridge/bridge-nf-call-iptables: No such file or directory`
-then run below and try again
-
-`modprobe br_netfilter`
-
 ## SSH to the nodes
 
 There are two ways to SSH into the nodes:
@@ -101,3 +96,8 @@ In such cases delete the VM, then delete the VM folder and then re-provision
 `rmdir "<path-to-vm-folder>\kubernetes-ha-worker-2"`
 
 `vagrant up`
+
+> if you get => `sysctl: cannot stat /proc/sys/net/bridge/bridge-nf-call-iptables: No such file or directory`
+then run below and try again
+
+`modprobe br_netfilter`
