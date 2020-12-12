@@ -96,7 +96,7 @@ EOF
 }
 ```
 
-> Remember to run the above commands on each controller node: `master-1`, and `master-2`.
+> Remember to run the above commands on each controller node: `master-1`, `master-2` and `master-3`.
 
 ## Verification
 
@@ -115,6 +115,7 @@ sudo ETCDCTL_API=3 etcdctl member list \
 ```
 45bf9ccad8d8900a, started, master-2, https://192.168.5.12:2380, https://192.168.5.12:2379
 54a5796a6803f252, started, master-1, https://192.168.5.11:2380, https://192.168.5.11:2379
+da27c13c21936c01, started, master-3, https://192.168.5.13:2380, https://192.168.5.13:2379
 ```
 
 Reference: https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/#starting-etcd-clusters
