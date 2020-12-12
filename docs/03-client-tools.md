@@ -27,7 +27,7 @@ EOF
 ```
 
 
-## Install kubectl
+## Install kubectl on all nodes except lb node
 
 The [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl). command line utility is used to interact with the Kubernetes API Server. Download and install `kubectl` from the official release binaries:
 
