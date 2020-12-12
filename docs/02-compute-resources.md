@@ -41,7 +41,8 @@ This does the below:
     > sysctl net.bridge.bridge-nf-call-iptables=1
 
 > if you get => `sysctl: cannot stat /proc/sys/net/bridge/bridge-nf-call-iptables: No such file or directory`
-then run below and try again 
+then run below and try again
+
 `modprobe br_netfilter`
 
 ## SSH to the nodes
